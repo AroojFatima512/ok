@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add responsive styles here */
+      @media only screen and (max-width: 768px) {
+        /* Styles for screens smaller than 768px */
+        .alinks {
+          display: none;
+        }
+
+        .alogo {
+          margin-left: 15px;
+        }
+
+        .anav {
+          justify-content: space-between;
+          padding: 10px;
+        }
+
+        .aimg1 {
+          height: auto;
+        }
+
+        .atext {
+          margin-top: 200px;
+          font-size: 40px;
+        }
+
+        .aform {
+          margin-top: 50px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .aflight {
+          margin-left: 0;
+          width: 90%;
+        }
+
+        label {
+          margin-left: 0;
+        }
+
+        input,
+        select {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .asu {
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+
+        .amain {
+          flex-direction: column;
+        }
+
+        .ad1 {
+          width: 90%;
+          height: auto;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
+        .ai {
+          margin-left: 0;
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .adubai,
+        .adubai2 {
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .acabin1,
+        .acabin2,
+        .acabin3,
+        .acabin4 {
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .aclass,
+        .aclass1 {
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .areview {
+          text-align: center;
+          margin-top: 50px;
+        }
+
+        .acontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+          justify-items: center;
+        }
+
+        .afoot {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .asocial ul {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 10px;
+        }
+
+        .asocial img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rest of the code -->
+  </body>
+</html>
+
+  <body>
+    <header>
+      <nav class="anav">
+        <div class="alogo">Travellers</div>
+        <div>
+          <ul class="alinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Packages</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div>
+      <img class="aimg1" src="img.jpg" alt="" />
+    </div>
+
+    <h1 class="atext">Discover New World!</h1>
+
+    <div class="aform">
+      <div class="ac">Search flights</div>
+      <div class="ac">Manage Booking/Check in</div>
+      <div class="ac">What's on your flight</div>
+      <div class="ac">Flights Status</div>
+    </div>
+
+    <form class="aflight" action="backend.php">
+      <div>
+        <label for="name"> Full Name:</label>
+        <input type="text" name="myname" id="aname" />
+
+        <label for="email"> Email :</label>
+        <input type="email" name="myemail" id="aemail" />
+      </div>
+      <br />
+      <div>
+        <label for="phone"> Phone No:</label>
+        <select name="phoneCode" id="aphone">
+          <option selected hidden value="">Code</option>
+          <option value="977">92</option>
+          <option value="978">91</option>
+          <option value="979">93</option>
+          <option value="973">94</option>
+          <option value="972">98</option>
+          <option value="974">95</option>
+        </select>
+        <input id="ab" type="phone" name="myphone" id="phone" />
+
+        <label for="address"> Address :</label>
+        <input type="text" name="myaddress" id="aaddress" />
+      </div>
+      <br />
+      <div>
+        <label for="where"> Where to: </label>
+        <input type="text" name="where" id="awhere" />
+
+        <label for="people"> How Many: </label>
+        <input type="number" name="people" id="apeople" />
+      </div>
+      <br />
+      <div>
+        <label for="arrivals"> Arrivals:</label>
+        <input type="date" name="arrivals" id="aarrivals" />
+
+        <label for="leaving"> Leaving:</label>
+        <input type="date" name="leaving" id="aleaving" />
+      </div>
+      <br />
+      <div>
+        <label for="Submit Now"></label>
+        <input class="asu" type="submit" value="Submit Now" />
+
+        <label for="Reset Now"></label>
+        <input class="asu" type="reset" value="Reset Now" />
+      </div>
+    </form>
+
+    <div class="atravel">
+      <pre class="aflying">F L Y I N G   W I T H    T R A V E L L E R S</pre>
+      <h1 class="ajourney">Make it an incredible journey</h1>
+      <ul class="aexplore">
+        Explore the Travellers experience and plan an unforgettable trip beyond
+        your flight.
+      </ul>
+    </div>
+
+    <div class="amain">
+      <img class="ad1" src="dubai.avif" alt="no img found" />
+      <pre class="adubai"> <pre class="ap">D U B A I   E X P E R I E N C E</pre>
+      <pre class="adubai2">Create Your Dubai
+Experience </pre> </pre>
+
+      <div class="ai">
+        <img class="apic" id="aimg1" src="1st class.avif" alt="no img found" />
+        <div class="as">
+          <pre class="acabin1"> C A B I N    F E A T U R E S </pre>
+          <pre class="aclass">First Class</pre>
+          
+        </div>
+        <img
+          class="apic" id="aimg2" src="premium-economy.avif" alt="no img found" />
+        <div class="as">
+          <pre class="acabin2">C A B I N    F E A T U R E S</pre>
+          <pre class="aclass">Premium Economy</pre>
+          
+        </div>
+      </div>
+      <div class="ai">
+        <img class="apic" id="aimg3" src="business-class.avif" alt="no img found" />
+        <div class="as1">
+          <pre class="acabin3">C A B I N    F E A T U R E S</pre>
+          <pre class="aclass1">Business Class</pre>
+        </div>
+        <img
+          class="apic" id="aimg4" src="economy-class.avif" alt="no img found" />
+        <div class="as1">
+          <pre class="acabin4">C A B I N    F E A T U R E S </pre>
+          <pre class="aclass1">Economy Class</pre>
+        </pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="areview">
+      <h1 class="aclient">Client Reviews</h1>
+    </div>
+
+    <div class="acontainer">
+      <div class="acard"><img src="r.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r1.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r2.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r3.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r4.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r5.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r6.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r7.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r8.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r9.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r10.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r11.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r1.png" alt="No Image Found" /></div>
+      <div class="acard"><img src="r2.png" alt="No Image Found" /></div>
+    </div>
+  </body>
+
+  <footer class="afooter">
+    <div class="afoot">
+      <div class="ahelp">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="">Support</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Queries</a></li>
+          <li><a href="">API</a></li>
+          <li><a href="">License</a></li>
+        </ul>
+      </div>
+
+      <div class="aquick">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="">Terms of use</a></li>
+          <li><a href="">Change region</a></li>
+          <li><a href="">Cookie preferences</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="acontactus">
+        <h3>Contact info</h3>
+        <ul>
+          <li><a href="">123-Street, City, Country</a></li>
+          <li><a href="">+92-4234564-738</a></li>
+          <li><a href="">info@example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="asocial">
+        <h3>Social</h3>
+        <ul>
+          <li><img src="004-instagram.png" alt="No Image Found" /></li>
+          <li><img src="003-twitter.png" alt="No Image Found" /></li>
+          <li><img src="002-facebook.png" alt="No Image Found" /></li>
+          <li><img src="001-linkedin.png" alt="No Image Found" /></li>
+        </ul>
+      </div>
+    </div>
+    <div class="acopyright">
+      <p>&copy; 2023 Travellers. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
